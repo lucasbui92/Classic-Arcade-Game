@@ -16,7 +16,7 @@ body {
 }
 
 .modal-content {
-    background-image: url("https://wallpaperbrowse.com/media/images/518169-backgrounds.jpg");
+    background-image: url("https://wallpaperbrowse.com/media/images/518169-backgrounds.jpg"); /*The image is taken from this website*/
     background-repeat: repeat-x;
     margin: 5% auto;
     padding: 40px;
