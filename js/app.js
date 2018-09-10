@@ -26,7 +26,7 @@ Enemy.prototype.update = function(dt) {
     }
 
     // If the player touches the bug, reset the player's position
-    if (this.y == player.y) {
+    if (this.y === player.y) {
       if (player.x >= (this.x - range) && player.x <= (this.x + range)) {
         player.x = x_initial_pos;
         player.y = y_initial_pos;
@@ -94,13 +94,12 @@ Player.prototype.handleInput = function(direction) {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 const end_wall = 500;
-var allEnemies = [];
-allEnemies.push(new Enemy(-30, 65, 3));
-allEnemies.push(new Enemy(-60, 65, 5));
-allEnemies.push(new Enemy(-100, 150, 4));
-allEnemies.push(new Enemy(-150, 150, 2));
-allEnemies.push(new Enemy(-230, 235, 3));
-allEnemies.push(new Enemy(-270, 235, 4));
+var allEnemies = [new Enemy(-30, 65, 3),
+                  new Enemy(-60, 65, 5),
+                  new Enemy(-100, 150, 4),
+                  new Enemy(-150, 150, 2),
+                  new Enemy(-230, 235, 3),
+                  new Enemy(-270, 235, 4)];
 
 const x_initial_pos = 200, y_initial_pos = 405;
 var count = 0;
@@ -122,7 +121,7 @@ document.addEventListener('keyup', function(e) {
 
 // This enables the player to close the modal and play the game
 const winModal = document.querySelector('.modal');
-var closeModal = document.querySelector('.close');
+const closeModal = document.querySelector('.close');
 closeModal.onclick = function() {
   winModal.style.display = "none";
   count = 0;
