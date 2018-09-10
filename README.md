@@ -1,5 +1,5 @@
-Arcade Game Instruction
-===============================
+# Arcade Game Instruction
+----
 
 ## Starting the game
 The game will start automatically as the player can see the bugs moving across the interaction screen.
